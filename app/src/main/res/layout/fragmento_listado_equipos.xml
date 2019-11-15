@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rfal="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/label_list_sample_rfal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    rfal:rfal_frame_alpha="0.7"
+    rfal:rfal_frame_color="#ffffff">-->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_lista_equipos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_agregar_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/floatingbutton_marginend"
+        android:layout_marginBottom="@dimen/floatingbutton_marginbottom"
+        android:backgroundTint="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/monsoon"
+        android:outlineSpotShadowColor="@color/monsoon"
+        android:src="@drawable/ic_add_white_24dp" />
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--<include layout="@layout/transversal_fab" />
+</com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>-->

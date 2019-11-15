@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+//Artifactory
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'maven-publish'
+
+ext {
+    minSdkVersion = 21
+    majorVersion = 1
+    minorVersion = 0
+    patchVersion = 0
+    preRelease = "alpha"
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.infotrack.talleres"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+private Integer generateVersionCode() {
+    return ext.minSdkVersion * 10000000 + ext.majorVersion * 10000 + ext.minorVersion * 100 + ext.patchVersion
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.majorVersion}.${ext.minorVersion}.${ext.patchVersion}"
+    if (ext.preRelease != null && !ext.preRelease.isEmpty()) {
+        versionName = versionName + "-" + ext.preRelease
+    }
+    return versionName
+}
+
+ext {
+    dependencyVersions = [
+            androidSupport          : '28.0.0',
+            androidSupportConstraint: '1.1.3',
+            androidSupportTest      : '1.0.2',
+            junit                   : '4.12',
+            dagger2                 : '2.21',
+            rxJava2                 : '2.1.9',
+            rxAndroid               : '2.0.2',
+            Glide                   : '4.6.1',
+            Gson                    : '2.8.5',
+            retrofit2               : '2.5.0',
+            retrofit2RxJava2Adapter : '2.4.0',
+            retrofit2GsonConverter  : '2.5.0',
+            butterknife             : '8.8.1',
+            butterknifeCompiler     : '8.7.0',
+            firebase                : '17.0.0',
+            firebaseCore            : '16.0.9',
+            infotrackUtilitarios    : '2.2.9',
+            infotrackListaChequeo   : '1.0.7',
+            infotrackPerifericos    : '1.1.2',
+            infotrackGaleria        : '1.0.4',
+            infotrackDataMS         : '1.0.3',
+            infotrackWorkerMS       : '1.0.0',
+            infotrackConsumoMS      : '1.0.0']
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Android Support
+    implementation "com.android.support:appcompat-v7:$dependencyVersions.androidSupport"
+    implementation "com.android.support:support-v4:$dependencyVersions.androidSupport"
+    implementation "com.android.support:design:$dependencyVersions.androidSupport"
+    implementation "com.android.support:cardview-v7:$dependencyVersions.androidSupport"
+    implementation "com.android.support:recyclerview-v7:$dependencyVersions.androidSupport"
+    implementation "com.android.support.constraint:constraint-layout:$dependencyVersions.androidSupportConstraint"
+    implementation 'com.android.support:percent:28.0.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //Test
+    testImplementation "junit:junit:$dependencyVersions.junit"
+    androidTestImplementation "com.android.support.test:runner:$dependencyVersions.androidSupportTest"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$dependencyVersions.dagger2"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dependencyVersions.dagger2"
+
+    //Rxjava
+    implementation "io.reactivex.rxjava2:rxjava:$dependencyVersions.rxJava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$dependencyVersions.rxAndroid"
+
+    //FlexBox
+    implementation 'com.google.android:flexbox:1.0.0'
+
+    //Firebase -> Dependencias mas altas son para el uso con la bibilioteca de retrocompatibilidad de androidx
+    implementation "com.google.firebase:firebase-auth:$dependencyVersions.firebase"
+    implementation "com.google.firebase:firebase-database:$dependencyVersions.firebase"
+    implementation "com.google.firebase:firebase-core:$dependencyVersions.firebaseCore"
+
+    //ButterKnife
+    implementation "com.jakewharton:butterknife-compiler:$dependencyVersions.butterknifeCompiler"
+    implementation "com.jakewharton:butterknife:$dependencyVersions.butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$dependencyVersions.butterknifeCompiler"
+
+    //Gson
+    implementation "com.google.code.gson:gson:$dependencyVersions.Gson"
+
+    //FAB
+    implementation 'com.github.wangjiegulu:rfab:2.0.0'
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:4.6.1"
+    //implementation 'jp.wasabeef:glide-transformations:4.1.0'
+
+    //Room
+    implementation  "android.arch.persistence.room:runtime:1.1.1"
+
+    //Artefactos Infotrack
+    implementation(group: 'com.infotrack.artefactos', name: 'utilitarios', version: "$dependencyVersions.infotrackUtilitarios", ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'artefactolistachequeo', version: "$dependencyVersions.infotrackListaChequeo", ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'perifericos', version: "$dependencyVersions.infotrackPerifericos", ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'galeria', version: '1.0.4', ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'artefactofirma', version: '1.0.0', ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'datamicroservicios', version: "$dependencyVersions.infotrackDataMS", ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'workermicroservicios', version: "$dependencyVersions.infotrackWorkerMS", ext: 'aar')
+    implementation(group: 'com.infotrack.artefactos', name: 'consumomicroservicios', version: "$dependencyVersions.infotrackConsumoMS", ext: 'aar')
+
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

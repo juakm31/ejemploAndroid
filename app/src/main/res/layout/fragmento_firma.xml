@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/infostyle.componente.cardview"
+    android:clickable="false">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_title"
+            style="@style/infostyle.fuente.subtitulo"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/txt_firma_titulo"
+            app:layout_heightPercent="8%" />
+
+        <com.infotrack.artefactofirma.ContenedorFirma.ContenedorFirma
+            android:id="@+id/contenedor_firma_tecnico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title"
+            app:layout_heightPercent="82%" />
+
+        <Button
+            android:id="@+id/btn_limpiar_firmas"
+            style="@style/infostyle.fuente.boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contenedor_firma_tecnico"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn_limpiar_firma"
+            app:layout_heightPercent="10%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.v7.widget.CardView>

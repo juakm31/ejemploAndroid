@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="list_eq_titulo_placa_congelador">Placa Congelador:</string>
+    <string name="list_eq_titulo_clase">Clase:</string>
+    <string name="list_eq_titulo_capacidad">Capacidad:</string>
+    <string name="list_eq_titulo_mantenimiento">Mantenimiento:</string>
+    <string name="list_eq_titulo_tecnico">Técnico:</string>
+</resources>

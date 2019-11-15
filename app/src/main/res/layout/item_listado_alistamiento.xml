@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item_resumen_alistamiento"
+    style="@style/infostyle.componente.cardview">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexDirection="column"
+            app:layout_flexBasisPercent="48%">
+
+            <TextView
+                style="@style/infostyle.fuente.contenido.secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_al_titulo_placa_vehiculo"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/infostyle.fuente.contenido.secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_al_titulo_transportadora"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/infostyle.fuente.contenido.secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_al_titulo_conductor"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/infostyle.fuente.contenido.secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alista_titulo_cantidad_equipos"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/infostyle.fuente.contenido.secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alista_titulo_tecnico"
+                android:textStyle="bold" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexDirection="column"
+            app:layout_flexBasisPercent="49%">
+
+            <TextView
+                android:id="@+id/txt_alist_placa_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_no_aplica" />
+
+            <TextView
+                android:id="@+id/txt_alist_transportadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_no_aplica" />
+
+            <TextView
+                android:id="@+id/txt_alist_conductor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_no_aplica" />
+
+            <TextView
+                android:id="@+id/txt_alist_cantidad_equipos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_no_aplica" />
+
+            <TextView
+                android:id="@+id/txt_alist_creador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_no_aplica" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_flexBasisPercent="3%">
+
+            <LinearLayout
+                android:id="@+id/color_etapa_alistamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_radius_shape"
+                android:backgroundTint="@color/colorEtapa1"
+                android:orientation="horizontal" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</android.support.v7.widget.CardView>

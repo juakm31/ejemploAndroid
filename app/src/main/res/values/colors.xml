@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d50000</color>
+    <color name="colorPrimaryDark">#9b0000</color>
+    <color name="colorAccent">#ff5131</color>
+
+    <!--region Colores Estados-->
+    <color name="colorEtapa1">#d2d6de</color>
+    <color name="colorEtapa2">#3c8dbc</color>
+    <color name="colorEtapa3">#00a65a</color>
+    <color name="colorEtapa4">#f39c12</color>
+    <color name="colorEtapa5">#00c0ef</color>
+    <color name="colorEtapa6">#D32F2F</color>
+    <!--endregion-->
+
+    <!--region Colores Acciones-->
+    <color name="colorAccion1">#303F9F</color>
+    <color name="colorAcccionDark1">#1A237E</color>
+    <color name="colorAccion2">#388E3C</color>
+    <color name="colorAcccionDark2">#1B5E20</color>
+    <color name="colorAcccion3">#D32F2F</color>
+    <color name="colorAcccionDark3">#B71C1C</color>
+    <color name="colorAccion4">#FA0303</color>
+    <color name="colorAccion5">#00BEF3</color>
+    <color name="colorAccion6">#18DD25</color>
+    <!--endregion-->
+
+    <!--region Colores Menu-->
+    <color name="textColorTituloMenu">#3F3F3F</color>
+    <color name="backgroundMenu">#F0F0F0</color>
+    <color name="colorEnumeradorMenu">#F56954</color>
+    <!--endregion-->
+</resources>
+

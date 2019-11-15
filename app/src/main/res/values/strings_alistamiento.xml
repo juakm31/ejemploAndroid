@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alista_titulo_informaci_n_b_sica">Información básica de tercero</string>
+    <string name="alista_titulo_placa">Placa:</string>
+    <string name="alista_titulo_taller">Taller:</string>
+    <string name="alista_titulo_conductor">Conductor:</string>
+    <string name="alista_titulo_cantidad_equipos">Cantidad Equipos:</string>
+    <string name="alista_titulo_tecnico">Técnico:</string>
+    <string name="alista_titulo_observaci_n">Observación:</string>
+    <string name="alista_titulo_transportadora">Transportadora:</string>
+    <string name="alista_btn_iniciar_recepcion">Iniciar</string>
+
+    <string name="alista_fab_agregar">Agregar</string>
+    <string name="alista_fab_eliminar">Eliminar</string>
+    <string name="alista_fab_finalizar">Finalizar</string>
+    <string name="alista_fab_listachequeo">CheckList</string>
+
+    <string name="alista_toolbar_listado_recepcion">Bandeja Recepción</string>
+    <string name="alista_toolbar_listado_despacho">Bandeja Despacho</string>
+
+    <string name="alista_toolbar_Recepcion">Iniciar Recepción</string>
+    <string name="alista_toolbar_despacho">Iniciar Despacho</string>
+    <string name="alista_toolbar_listado_equipos_recepcion">Equipos Recepción</string>
+    <string name="alista_toolbar_listado_equipos_despacho">Equipos Despacho</string>
+
+    <string name="alista_toolbar_Agregar_Equipo">Agregar Equipo</string>
+</resources>

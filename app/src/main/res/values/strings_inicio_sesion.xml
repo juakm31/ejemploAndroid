@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="actividad_inicio_sesion_mensaje_error_conexion">No se pudo establecer conexión.</string>
+    <string name="actividad_inicio_sesion_mensaje_error_timeout">No se pudo conectar con el servicio de autenticación.</string>
+    <string name="actividad_inicio_sesion_mensaje_tarea">Iniciando sesión...</string>
+    <string name="actividad_inicio_sesion_mensaje_error_token_firebase">La autenticación móvil ha fallado.</string>
+    <string name="versionApp">V 1.0.0</string>
+
+    <!--region Permisos-->
+    <string name="texto_error_permisos_servicio_ubicacion">Por favor conceda los permisos requeridos, para poder utilizar esta funcionalidad.</string>
+    <string-array name="permisos_aplicacion">
+        <item>android.permission.CAMERA</item>
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+    </string-array>
+    <!--endregion-->
+</resources>

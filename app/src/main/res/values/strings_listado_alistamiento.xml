@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region Fragmento-->
+    <string name="list_al_titulo_placa_vehiculo">Placa Vehiculo:</string>
+    <string name="list_al_titulo_transportadora">Transportadora:</string>
+    <string name="list_al_titulo_conductor">Conductor:</string>
+    <string name="list_al_titulo_cantidad_equipos">Cantidad Equipos:</string>
+    <!--endregion-->
+
+    <!--region Acciones Toolbar sheet-->
+    <string name="list_al_accion_lista_equipo">Listado Equipos</string>
+    <string name="list_al_accion_eliminar">Eliminar</string>
+    <string name="list_al_accion_finalizar">Finalizar</string>
+    <!--endregion-->
+</resources>

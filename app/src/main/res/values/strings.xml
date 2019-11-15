@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Meals Talleres</string>
+
+    //Mensajes de Excepcion
+    <string name="error_msj_sin_conexion">Comprueba tu conexión a Internet.</string>
+    <string name="error_msj_usuario_no_encontrado">No se pueden recuperar los datos del usuario o el usuario no existe.</string>
+    //Mensajes de Excepcion
+
+    //Generales
+    <string name="item_no_aplica" />
+    <string name="checkbox_dar_de_baja">Dar de Baja</string>
+    <string name="checkbox_higiene">Higiene</string>
+    <string name="msj_buscar_aqui">Buscar aquí…</string>
+    //Generales
+    
+    <string name="txt_firma_titulo">Firma</string>
+    <string name="btn_limpiar_firma">Limpiar firma</string>
+    <string name="mensaje_guardar_firma">¿Está seguro que desea guardar?</string>
+    <string name="mensaje_solicitar_firma">"Ingrese la firma del técnico"</string>
+
+    <!--region Bottom MenuConstantes-->
+    <string name="bottom_menu_lista_chequeo">Lista de Chequeo</string>
+    <string name="bottom_menu_eliminar">Eliminar</string>
+    <string name="bottom_menu_finalizar">Finalizar</string>
+    <!--endregion-->
+</resources>

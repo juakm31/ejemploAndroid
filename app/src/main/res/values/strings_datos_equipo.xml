@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="equipo_titulo_informaci_n_del_equipo">Información del Equipo</string>
+    <string name="equipo_titulo_placa">Placa:</string>
+    <string name="equipo_titulo_clase">Clase:</string>
+    <string name="equipo_titulo_fabricante">Fabricante:</string>
+    <string name="equipo_titulo_capacidad">Capacidad:</string>
+    <string name="equipo_titulo_observaci_n">Observación:</string>
+    <string name="equipo_btn_agregar_equipo">Agregar</string>
+    <string name="equipo_titulo_centro">Centro:</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="324dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="50dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/edt_id_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"
+                android:inputType="textEmailAddress"
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/edt_contrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:text="" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_iniciar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/infostyle.fuente.boton"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Iniciar Sesion" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/versionApp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.infotrack.talleres">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".presentacion.base.AplicacionPrincipal"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:name">
+        <activity
+            android:name=".presentacion.componentes.alistamiento.crear.CrearAlistamientoActividad"
+            android:label="RECEPCIÓN"/>
+        <activity
+            android:name=".presentacion.componentes.alistamiento.datosequipo.DatosEquipoActividad"
+            android:label="@string/alista_toolbar_Agregar_Equipo"/>
+        <activity android:name=".presentacion.componentes.alistamiento.listadoalistamientos.ListadoAlistamientoActividad" />
+        <activity android:name=".presentacion.componentes.autenticacion.IniciarSesionActividad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentacion.componentes.alistamiento.listadoequipos.ListadoEquiposActividad" />
+        <activity android:name="infotrack.artefactos.galeria.GaleriaActivity" />
+        <activity
+            android:name=".presentacion.componentes.alistamiento.listachequeo.ListaChequeoActividad"
+            android:label="Lista de Chequeo" />
+        <activity
+            android:name=".presentacion.componentes.alistamiento.firma.FirmaActividad"
+            android:label="Firma" />
+        <activity android:name=".presentacion.componentes.menu.MenuActividad" />
+        <activity android:name=".presentacion.componentes.diagnosticorechazo.listado.ListadoDiagnosticoRechazoActividad" />
+        <activity android:name=".presentacion.componentes.diagnosticorechazo.caso.CasoActividad" />
+    </application>
+</manifest>
